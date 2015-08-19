@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SinatraBackboneBoilerplate</title>
+
+    <script src='/scripts/jquery.js'></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+    <script src='/scripts/app.js'></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/main.scss">
+  </head>
+  <body>
+
+
+
+    <%= yield %>
+
+
+<script type="text/template" id="album">
+
+  <tr>
+    <td>
+      <%%= albumname %>
+    </td>
+    <td>
+      <%%= song %>
+    </td>
+    <td>
+      <%%= releasedate %>
+    </td>
+    <td>
+        <img src="<%%=  albumcover %>">
+    </td>
+  </tr>
+
+
+</script>
+
+
+
+  </body>
+</html>
